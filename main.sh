@@ -13,7 +13,7 @@ read -s host_password
 
         cat >> zabbix_agentd.conf <<EOF
 PidFile=/usr/local/zabbix-agent/tmp/zabbix_agentd.pid
-LogFile=/usr/local/zabbix-agent/tmp/zabbix_agentd.log
+LogFile=/usr/local/zabbix-agent/log/zabbix_agentd.log
 Server=$server_ip
 ListenPort=10050
 ServerActive=$server_ip
