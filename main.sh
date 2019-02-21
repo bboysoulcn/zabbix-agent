@@ -19,7 +19,7 @@ ListenPort=10050
 ServerActive=$server_ip
 Hostname=$hostname
 EOF
-
+yum install sshpass
 ssh-keyscan $host_ip > ~/.ssh/known_hosts
 sshpass -p $host_password scp zabbix_agentd.conf root@$host_ip:/usr/local/
 sshpass -p $host_password scp zabbix-agent.tar root@$host_ip:/usr/local/
